@@ -46,8 +46,7 @@ export default function ContactPage() {
                   Office Address
                 </span>
                 Office No – 02, In Top Heights, Plot No 70 & 71,<br />
-                Sector -19, Airoli,<br />
-                Navi Mumbai – 400708.
+                Sector-19, Airoli, Navi Mumbai – 400708.
               </p>
 
               <p>

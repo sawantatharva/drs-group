@@ -66,7 +66,7 @@ export default function Footer() {
             <div className="space-y-4 font-inter text-sm text-gray-600">
               <p className="leading-relaxed">
                 Office No – 02, In Top Heights, <br />
-                Plot No 70 & 71, Sector -19, Airoli,<br />
+                Plot No 70 & 71, Sector-19, Airoli,<br />
                 Navi Mumbai – 400708
               </p>
 
