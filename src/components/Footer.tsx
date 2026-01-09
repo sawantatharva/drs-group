@@ -38,7 +38,7 @@ export default function Footer() {
             <ul className="grid grid-cols-2 gap-y-3 gap-x-6 font-inter text-sm">
               {[
                 { label: "About", href: "/about" },
-                { label: "Solutions", href: "/smart-solutions" },
+                { label: "Solutions", href: "/solutions" },
                 { label: "Consulting", href: "/consulting" },
                 { label: "Customers", href: "/customers" },
                 { label: "Impact", href: "/impact" },
