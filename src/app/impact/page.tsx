@@ -1,42 +1,233 @@
+"use client";
+
+import Link from "next/link";
+import { motion } from "framer-motion";
+import Image from "next/image";
+
 export default function ImpactPage() {
   return (
-    <main>
-      {/* Intro */}
-      <section className="bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-6 py-20">
-          <h1 className="font-aeonik text-4xl text-gray-900">
-            Our Impact
-          </h1>
-          <p className="mt-4 max-w-3xl text-lg text-gray-600">
-            DRS Group delivers measurable business outcomes through structured
-            execution, data-driven consulting, and governance-led operational
-            improvement models.
-          </p>
+    <main className="w-full overflow-x-hidden">
+
+      {/* ================= HERO ================= */}
+      <section className="relative bg-[#050b1a] pt-32 pb-24 text-white">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(9,38,99,0.5),transparent_45%)]" />
+
+        <div className="relative mx-auto max-w-7xl px-6">
+          <motion.h1
+            initial={{ opacity: 0, y: 26 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="font-aeonik text-4xl md:text-5xl"
+          >
+            Creating Impact That Matters
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="mt-5 max-w-3xl font-inter text-base leading-relaxed text-gray-400"
+          >
+            At DRS Group, impact goes beyond operational excellence. Through our
+            foundation and enterprise engagements, we create meaningful change
+            for businesses and communities alike.
+          </motion.p>
         </div>
       </section>
 
-      {/* Key Metrics */}
-      <section className="bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6 py-20">
-          <h2 className="font-aeonik text-2xl text-gray-900 mb-10">
-            Measurable Results Across Engagements
-          </h2>
+      {/* ================= FOUNDATION ================= */}
+      <section className="bg-white py-28">
+        <div className="mx-auto max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* TEXT */}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <p className="mb-3 font-inter text-xs tracking-widest uppercase text-gray-500">
+              Social Responsibility
+            </p>
+
+            <h2 className="font-aeonik text-2xl md:text-3xl text-gray-900">
+              DRS Foundation
+            </h2>
+
+            <p className="mt-6 font-inter text-base leading-relaxed text-gray-600">
+              DRS Foundation is our social impact arm, created to extend our
+              philosophy of excellence beyond enterprises and into society.
+            </p>
+
+            <p className="mt-4 font-inter text-base leading-relaxed text-gray-600">
+              We actively work across education, skill development, and
+              community upliftment to empower individuals and build sustainable
+              futures.
+            </p>
+
+            <p className="mt-4 font-inter text-base leading-relaxed text-gray-600">
+              Our belief is simple — true success is measured by the lives we
+              improve, not just the numbers we achieve.
+            </p>
+          </motion.div>
+
+          {/* IMAGE */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="relative aspect-4/3 rounded-3xl bg-gray-100 flex items-center justify-center text-gray-400 text-sm"
+          >
+            <Image
+              src="/about/impact.png"
+              alt="DRS leadership and operations"
+              fill
+              className="object-cover"
+            />
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ================= FOUNDATION PROGRAMS ================= */}
+
+      {/* ================= FOUNDATION PROGRAMS ================= */}
+<section className="bg-gray-50 py-28">
+  <div className="mx-auto max-w-7xl px-6">
+
+    <h3 className="font-aeonik text-2xl text-gray-900 mb-12">
+      Focus Areas
+    </h3>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+      {[
+        {
+          title: "Education Support",
+          desc:
+            "Scholarships, digital learning initiatives, and infrastructure support for underprivileged students.",
+          icon: (
+            <svg viewBox="0 0 24 24" className="h-8 w-8">
+              <path
+                d="M3 7l9-4 9 4-9 4-9-4z"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              />
+              <path
+                d="M5 10v5c0 2 14 2 14 0v-5"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              />
+            </svg>
+          ),
+        },
+        {
+          title: "Skill Development",
+          desc:
+            "Vocational training programs designed to improve employability and career readiness.",
+          icon: (
+            <svg viewBox="0 0 24 24" className="h-8 w-8">
+              <path
+                d="M3 12h18"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              />
+              <path
+                d="M12 3v18"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              />
+              <circle
+                cx="12"
+                cy="12"
+                r="9"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              />
+            </svg>
+          ),
+        },
+        {
+          title: "Community Welfare",
+          desc:
+            "Healthcare camps, awareness drives, and sustainable livelihood initiatives.",
+          icon: (
+            <svg viewBox="0 0 24 24" className="h-8 w-8">
+              <path
+                d="M12 21s-7-4.5-7-10a4 4 0 018-1 4 4 0 018 1c0 5.5-7 10-7 10z"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              />
+            </svg>
+          ),
+        },
+      ].map((item, index) => (
+        <motion.div
+          key={item.title}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: index * 0.05 }}
+          className="
+            group
+            rounded-2xl 
+            border border-gray-200 
+            bg-white 
+            p-8
+            transition
+            hover:shadow-lg
+          "
+        >
+          {/* ICON */}
+          <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#4f6ef7]/10 text-[#4f6ef7]">
+            {item.icon}
+          </div>
+
+          <h4 className="font-aeonik text-lg text-gray-900">
+            {item.title}
+          </h4>
+
+          <p className="mt-4 font-inter text-sm leading-relaxed text-gray-600">
+            {item.desc}
+          </p>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
+
+      {/* ================= ENTERPRISE IMPACT ================= */}
+      <section className="bg-[#050b1a] py-28 text-white">
+        <div className="mx-auto max-w-7xl px-6">
+
+          <p className="mb-3 font-inter text-xs tracking-widest uppercase text-gray-400">
+            Business Outcomes
+          </p>
+
+          <h3 className="font-aeonik text-2xl md:text-3xl mb-12">
+            Enterprise Impact
+          </h3>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
             {[
-              { label: "Administrative Cost Reduction", value: "₹48 Cr+" },
-              { label: "HVAC Cost Optimization", value: "20–25%" },
-              { label: "UPS & Battery Savings", value: "₹2 Cr+" },
-              { label: "Enterprise Locations Supported", value: "PAN-India" },
+              { label: "Admin Cost Reduction", value: "₹48 Cr+" },
+              { label: "HVAC Optimization", value: "20–25%" },
+              { label: "UPS Savings", value: "₹2 Cr+" },
+              { label: "Locations Supported", value: "PAN-India" },
             ].map((item) => (
               <div
                 key={item.label}
-                className="bg-white border border-gray-200 rounded-xl p-6"
+                className="rounded-2xl bg-white/5 border border-white/10 p-6"
               >
-                <p className="text-3xl font-aeonik text-(--color-primary)">
+                <p className="font-aeonik text-[#4f6ef7] text-3xl">
                   {item.value}
                 </p>
-                <p className="mt-2 text-sm text-gray-600">
+                <p className="mt-2 font-inter text-sm text-gray-400">
                   {item.label}
                 </p>
               </div>
@@ -45,56 +236,23 @@ export default function ImpactPage() {
         </div>
       </section>
 
-      {/* Impact Areas */}
-      <section className="bg-white">
-        <div className="max-w-7xl mx-auto px-6 py-20">
-          <h2 className="font-aeonik text-2xl text-gray-900 mb-8">
-            Areas of Impact
-          </h2>
+      {/* ================= CTA ================= */}
+      <section className="bg-white py-24">
+        <div className="mx-auto max-w-7xl px-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Cost Optimization",
-                desc: "Reduction in operational and administrative expenses through structured assessments and vendor optimization.",
-              },
-              {
-                title: "Operational Reliability",
-                desc: "Improved uptime, performance stability, and compliance across mission-critical infrastructure.",
-              },
-              {
-                title: "Governance & Transparency",
-                desc: "Implementation of measurable governance frameworks for sustained efficiency and accountability.",
-              },
-            ].map((area) => (
-              <div
-                key={area.title}
-                className="border border-gray-200 rounded-xl p-6"
-              >
-                <p className="font-medium text-gray-900">{area.title}</p>
-                <p className="mt-2 text-sm text-gray-600">
-                  {area.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="bg-gray-50 border-t border-gray-200">
-        <div className="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <p className="font-aeonik text-xl text-gray-900">
-            Ready to create measurable impact?
+            Want to collaborate on social or business impact?
           </p>
-          <a
+
+          <Link
             href="/contact"
-            className="rounded-lg bg-(--color-primary) px-6 py-3 text-white font-medium"
+            className="inline-flex items-center gap-2 rounded-xl bg-(--color-primary) px-8 py-4 text-sm font-medium text-white shadow-[0_12px_36px_rgba(9,38,99,0.35)] transition hover:brightness-110"
           >
-            Get in Touch
-          </a>
+            Connect With Us →
+          </Link>
         </div>
       </section>
+
     </main>
   );
 }

@@ -1,88 +1,80 @@
+"use client";
+
 export default function TermsPage() {
   return (
     <main>
-      <section className="bg-white border-b border-gray-200">
-        <div className="max-w-4xl mx-auto px-6 py-20">
-          <h1 className="font-aeonik text-4xl text-gray-900">
+      <section className="relative bg-[#050b1a] pt-24 pb-24 text-white md:pt-40">
+        <div className="mx-auto max-w-4xl px-6">
+          {/* TITLE */}
+          <h1 className="font-aeonik text-4xl md:text-5xl">
             Terms & Conditions
           </h1>
-          <p className="mt-4 text-gray-600">
-            These Terms & Conditions govern your use of the DRS Group website.
-            By accessing or using this website, you agree to comply with the
-            terms outlined below.
+
+          <p className="mt-4 font-inter text-base leading-relaxed text-gray-400">
+            These Terms & Conditions govern access to and use of the DRS Group
+            website, services, and related communications. By using this
+            website, you agree to the terms set forth below.
           </p>
-        </div>
-      </section>
 
-      <section className="bg-gray-50">
-        <div className="max-w-4xl mx-auto px-6 py-20 space-y-10 text-gray-700">
-
-          <div>
-            <h2 className="font-aeonik text-xl text-gray-900">
-              Use of Website
-            </h2>
-            <p className="mt-2">
-              The content provided on this website is for general informational
-              purposes only. Unauthorized use, reproduction, or distribution
-              of any content without prior written consent from DRS Group is
-              prohibited.
-            </p>
+          {/* CONTENT */}
+          <div className="mt-12 space-y-12">
+            {[
+              {
+                title: "Nature of Services",
+                content:
+                  "DRS Group provides consulting, infrastructure, facility management, and execution-led operational improvement services. All information presented on this website is intended to provide a general overview of our capabilities and does not constitute a binding offer, proposal, or guarantee of results.",
+              },
+              {
+                title: "Use of Website Content",
+                content:
+                  "All content on this website is provided for informational purposes only. Users may not copy, reproduce, distribute, modify, or commercially exploit any content without prior written consent from DRS Group.",
+              },
+              {
+                title: "Engagement & Performance Outcomes",
+                content:
+                  "Any consulting, optimization, or performance-linked engagement described on this website is subject to a separate written agreement. Actual outcomes depend on site conditions, scope definition, data accuracy, and client participation, and may vary across engagements.",
+              },
+              {
+                title: "Intellectual Property",
+                content:
+                  "All intellectual property rights, including methodologies, frameworks, designs, text, graphics, logos, and proprietary processes, are owned by DRS Group unless explicitly stated otherwise.",
+              },
+              {
+                title: "Limitation of Liability",
+                content:
+                  "DRS Group shall not be liable for any direct, indirect, incidental, consequential, or business-related damages arising from the use of this website or reliance on its content.",
+              },
+              {
+                title: "Third-Party Links",
+                content:
+                  "This website may contain links to third-party websites for reference or convenience. DRS Group does not control or endorse the content or practices of such external sites.",
+              },
+              {
+                title: "Confidentiality & Data Use",
+                content:
+                  "Information shared through this website is handled in accordance with our Privacy Policy. Confidential business information is governed only by formal contractual agreements.",
+              },
+              {
+                title: "Modifications to Terms",
+                content:
+                  "DRS Group reserves the right to modify these Terms & Conditions at any time. Continued use of the website constitutes acceptance of the updated terms.",
+              },
+              {
+                title: "Governing Law & Jurisdiction",
+                content:
+                  "These Terms & Conditions shall be governed by and construed in accordance with the laws of India. Any disputes shall be subject to the exclusive jurisdiction of Indian courts.",
+              },
+            ].map((section) => (
+              <div key={section.title}>
+                <h2 className="font-aeonik text-xl text-white">
+                  {section.title}
+                </h2>
+                <p className="mt-3 font-inter text-sm leading-relaxed text-gray-400">
+                  {section.content}
+                </p>
+              </div>
+            ))}
           </div>
-
-          <div>
-            <h2 className="font-aeonik text-xl text-gray-900">
-              Intellectual Property
-            </h2>
-            <p className="mt-2">
-              All intellectual property, including text, graphics, logos, and
-              design elements, is the property of DRS Group unless otherwise
-              stated. Any unauthorized use may result in legal action.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="font-aeonik text-xl text-gray-900">
-              Limitation of Liability
-            </h2>
-            <p className="mt-2">
-              DRS Group shall not be liable for any direct, indirect, incidental,
-              or consequential damages arising from the use or inability to use
-              this website or its content.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="font-aeonik text-xl text-gray-900">
-              External Links
-            </h2>
-            <p className="mt-2">
-              This website may include links to third-party websites for
-              convenience. DRS Group does not endorse and is not responsible for
-              the content or practices of such external sites.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="font-aeonik text-xl text-gray-900">
-              Modifications
-            </h2>
-            <p className="mt-2">
-              DRS Group reserves the right to update or modify these Terms &
-              Conditions at any time without prior notice. Continued use of the
-              website constitutes acceptance of the updated terms.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="font-aeonik text-xl text-gray-900">
-              Governing Law
-            </h2>
-            <p className="mt-2">
-              These Terms & Conditions shall be governed by and construed in
-              accordance with the laws of India.
-            </p>
-          </div>
-
         </div>
       </section>
     </main>
