@@ -43,17 +43,11 @@ export default function AboutPage() {
             </h2>
 
             <p className="mt-6 font-inter text-base leading-relaxed text-gray-600">
-              DRS Group is backed by the legacy and experience of our parent
-              organization, with over a decade of operational excellence across
-              enterprise environments. Our teams bring together engineering,
-              consulting, and technology expertise under a unified delivery
-              model.
-            </p>
+            DRS Group is a diversified operations and consulting organization, incorporated in 2021, built on the legacy of over a decade of enterprise experience through its parent foundation. The Group brings together engineering, consulting, and technology capabilities within a unified delivery model to support complex, mission-critical environments.            </p>
 
             <p className="mt-4 font-inter text-base leading-relaxed text-gray-600">
-              We partner with organizations to assess, optimize, and govern
-              mission-critical operations — ensuring long-term efficiency,
-              compliance, and measurable outcomes.
+            We partner with organizations across India to assess, optimize, and govern operational performance, delivering measurable outcomes in efficiency, compliance, and cost optimization. Our services are delivered through DRS Smart Solutions and DRS Consultancy Services, enabling end-to-end support from strategy to execution. Alongside our commercial operations, DRS Foundation focuses on initiatives that contribute positively to communities and broader societal development.
+
             </p>
           </div>
 
