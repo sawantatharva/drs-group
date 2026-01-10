@@ -13,16 +13,19 @@ const certifications = [
     title: "ISO 9001:2015",
     description: "Quality Management Systems",
     icon: <ShieldCheck size={26} />,
+    pdf: "/certificates/iso-9001.pdf",
   },
   {
     title: "ISO 14001:2015",
     description: "Environmental Management Systems",
     icon: <Leaf size={26} />,
+    pdf: "/certificates/iso-14001.pdf",
   },
   {
     title: "ISO 45001:2018",
     description: "Occupational Health & Safety",
     icon: <HardHat size={26} />,
+    pdf: "/certificates/iso-45001.pdf",
   },
 ];
 
@@ -37,7 +40,20 @@ export default function Certifications() {
     <section className="relative bg-[#050b1a] py-24 text-white">
 
       {/* Soft divider */}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-linear-to-b from-black/40 to-transparent" />
+      <div
+        className="
+          pointer-events-none
+          absolute
+          inset-x-0
+          top-0
+          h-32
+          bg-linear-to-b
+          from-[#020617]
+          via-[#020617]/70
+          to-transparent
+          blur-[1px]
+        "
+      />
 
       <div className="mx-auto max-w-7xl px-6">
 
@@ -53,10 +69,12 @@ export default function Certifications() {
 
         {/* CERTIFICATION CARDS */}
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
-
           {certifications.map((cert, index) => (
-            <motion.div
+            <motion.a
               key={cert.title}
+              href={cert.pdf}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -70,16 +88,19 @@ export default function Certifications() {
                 border border-white/10
                 transition
                 hover:bg-white/10
+                cursor-pointer
               "
             >
               {/* ICON */}
-              <div className="
-                mb-5 flex h-12 w-12
-                items-center justify-center
-                rounded-xl
-                bg-[#4f6ef7]/10
-                text-[#4f6ef7]
-              ">
+              <div
+                className="
+                  mb-5 flex h-12 w-12
+                  items-center justify-center
+                  rounded-xl
+                  bg-[#4f6ef7]/10
+                  text-[#4f6ef7]
+                "
+              >
                 {cert.icon}
               </div>
 
@@ -90,7 +111,12 @@ export default function Certifications() {
               <p className="mt-2 font-inter text-sm text-gray-400">
                 {cert.description}
               </p>
-            </motion.div>
+
+              {/* Hover hint */}
+              <p className="mt-4 text-xs text-[#4f6ef7] opacity-0 group-hover:opacity-100 transition">
+                View Certificate →
+              </p>
+            </motion.a>
           ))}
         </div>
 

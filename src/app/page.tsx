@@ -109,7 +109,7 @@ export default function Home() {
                 className="mt-10 flex flex-col sm:flex-row gap-4"
               >
                 <Link
-                  href="/smart-solutions"
+                  href="/solutions"
                   className="inline-flex justify-center items-center gap-2 rounded-xl 
                   bg-[#4f6ef7] px-6 py-4 text-sm font-medium text-white 
                   shadow-lg transition hover:brightness-110"
@@ -155,9 +155,9 @@ export default function Home() {
               <div
                 className="
                   relative
-                  h-64 w-64
-                  sm:h-80 sm:w-80
-                  md:h-105 md:w-105
+                  h-72 w-72
+                  sm:h-96 sm:w-96
+                  md:h-115 md:w-115
                 "
               >
                 <Hero3D />

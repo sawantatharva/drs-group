@@ -1,5 +1,6 @@
 "use client";
 
+import Certifications from "@/components/Certifications";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -358,6 +359,7 @@ export default function AboutPage() {
         </div>
       </div>
     </section>
+    <Certifications />
     </main>
   );
 }

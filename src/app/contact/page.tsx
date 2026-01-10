@@ -45,8 +45,8 @@ export default function ContactPage() {
                 <span className="block font-medium text-gray-900">
                   Office Address
                 </span>
-                Office No – 02, In Top Heights, Plot No 70 & 71,<br />
-                Sector-19, Airoli, Navi Mumbai – 400708.
+                Plot no. KAC-35, TTC Industrial Area, Opp. Digha<br />
+                Railway Station, Digha-Airoli, Navi Mumbai – 400708.
               </p>
 
               <p>
@@ -66,10 +66,10 @@ export default function ContactPage() {
                   Phone
                 </span>
                 <a
-                  href="tel:02231966428"
+                  href="tel:7710002293"
                   className="text-(--color-primary) hover:underline"
                 >
-                  022-31966428
+                  +91-7710002293
                 </a>
               </p>
             </div>
@@ -78,7 +78,7 @@ export default function ContactPage() {
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               {/* WhatsApp */}
               <a
-                href="https://wa.me/912231966428"
+                href="https://wa.me/917710002293"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="

@@ -1,6 +1,7 @@
 "use client";
 
 import { Canvas, useFrame } from "@react-three/fiber";
+import { Text3D } from "@react-three/drei";
 import { useRef } from "react";
 import * as THREE from "three";
 
@@ -10,25 +11,25 @@ function SystemsGlobe() {
   useFrame(({ mouse }) => {
     if (!group.current) return;
 
-    // Subtle interaction (professional, not playful)
     group.current.rotation.x = THREE.MathUtils.lerp(
       group.current.rotation.x,
-      mouse.y * 0.25,
-      0.035
-    );
-    group.current.rotation.y = THREE.MathUtils.lerp(
-      group.current.rotation.y,
-      mouse.x * 0.35,
+      mouse.y * 0.2,
       0.035
     );
 
-    // Constant slow rotation (authority)
-    group.current.rotation.y += 0.0012;
+    group.current.rotation.y = THREE.MathUtils.lerp(
+      group.current.rotation.y,
+      mouse.x * 0.3,
+      0.035
+    );
+
+    group.current.rotation.y += 0.001;
   });
 
   return (
     <group ref={group}>
-      {/* CORE — DRS Infrastructure */}
+
+      {/* CORE */}
       <mesh scale={2}>
         <sphereGeometry args={[1, 96, 96]} />
         <meshStandardMaterial
@@ -38,52 +39,39 @@ function SystemsGlobe() {
         />
       </mesh>
 
-      {/* CONNECTIVITY GRID — Smart Systems */}
+      {/* GRID */}
       <mesh scale={2.03}>
         <sphereGeometry args={[1, 64, 64]} />
         <meshBasicMaterial
           color="#4f6ef7"
           wireframe
           transparent
-          opacity={0.28}
+          opacity={0.22}
         />
       </mesh>
 
-      {/* CONSULTING / EXECUTION RING */}
-      <mesh rotation={[Math.PI / 2, 0, 0]}>
-        <torusGeometry args={[2.35, 0.015, 16, 160]} />
+      {/* BIG DRS TEXT */}
+      <Text3D
+        font="/fonts/helvetiker_bold.typeface.json"
+        size={0.8}
+        height={0.14}
+        position={[-0.95, 0, 2.15]}
+        bevelEnabled
+        bevelThickness={0.03}
+        bevelSize={0.02}
+        bevelSegments={8}
+      >
+        DRS
         <meshStandardMaterial
-          color="#092663"
-          emissive="#092663"
-          emissiveIntensity={0.35}
-          roughness={0.4}
-          metalness={0.6}
+          color="#ffffff"
+          emissive="#4f6ef7"
+          emissiveIntensity={0.85}
+          metalness={0.45}
+          roughness={0.2}
         />
-      </mesh>
+      </Text3D>
 
-      {/* SMART SOLUTION NODES */}
-      {Array.from({ length: 8 }).map((_, i) => {
-        const angle = (i / 8) * Math.PI * 2;
-        return (
-          <mesh
-            key={i}
-            position={[
-              Math.cos(angle) * 2.25,
-              Math.sin(angle) * 0.6,
-              Math.sin(angle) * 2.25,
-            ]}
-          >
-            <sphereGeometry args={[0.05, 16, 16]} />
-            <meshStandardMaterial
-              color="#ffffff"
-              emissive="#4f6ef7"
-              emissiveIntensity={0.9}
-            />
-          </mesh>
-        );
-      })}
-
-      {/* ATMOSPHERIC SYSTEM GLOW */}
+      {/* ATMOS GLOW */}
       <mesh scale={2.18}>
         <sphereGeometry args={[1, 64, 64]} />
         <meshBasicMaterial
@@ -103,8 +91,7 @@ export default function Hero3D() {
       dpr={[1, 1.5]}
       style={{ width: "100%", height: "100%" }}
     >
-      {/* Lighting — deliberate & directional */}
-      <ambientLight intensity={0.55} />
+      <ambientLight intensity={0.6} />
       <directionalLight position={[6, 6, 6]} intensity={1.2} />
       <directionalLight position={[-6, -4, -6]} intensity={0.6} />
 

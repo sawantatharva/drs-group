@@ -38,10 +38,10 @@ export default function Footer() {
             <ul className="grid grid-cols-2 gap-y-3 gap-x-6 font-inter text-sm">
               {[
                 { label: "About", href: "/about" },
-                { label: "Solutions", href: "/solutions" },
+                { label: "Smart Solutions", href: "/solutions" },
                 { label: "Consulting", href: "/consulting" },
                 { label: "Customers", href: "/customers" },
-                { label: "Impact", href: "/impact" },
+                { label: "Foundation", href: "/impact" },
                 { label: "Privacy Policy", href: "/privacy" },
                 { label: "Terms & Conditions", href: "/terms" },
               ].map((item) => (
@@ -65,8 +65,8 @@ export default function Footer() {
 
             <div className="space-y-4 font-inter text-sm text-gray-600">
               <p className="leading-relaxed">
-                Office No – 02, In Top Heights, <br />
-                Plot No 70 & 71, Sector-19, Airoli,<br />
+                Plot no. KAC-35, TTC Industrial Area, <br />
+                Opp. Digha Railway Station, Digha-Airoli,<br />
                 Navi Mumbai – 400708
               </p>
 
@@ -83,10 +83,10 @@ export default function Footer() {
               <div>
                 <p className="text-gray-900 font-medium">Phone</p>
                 <a
-                  href="tel:02231966428"
+                  href="tel:917710002293"
                   className="hover:text-(--color-primary) transition"
                 >
-                  022-31966428
+                  +91-7710002293
                 </a>
               </div>
             </div>
