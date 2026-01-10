@@ -17,7 +17,7 @@ const verticals = [
     title: "DRS Smart Solutions",
     description:
       "Technology-driven solutions that enable intelligent systems, data-driven decision-making, and scalable digital infrastructure.",
-    href: "/smart-solutions",
+    href: "/solutions",
     icon: Cpu,
   },
 ];
