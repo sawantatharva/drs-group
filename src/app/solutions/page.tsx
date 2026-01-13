@@ -29,7 +29,7 @@ export default function SolutionsPage() {
       title: "Inverter & Batteries",
       desc:
         "High-performance inverter and battery systems designed for efficiency and long service life.",
-      image: "/solutions/4.jpg",
+      image: "/solutions/4.jpeg",
     },
     {
       title: "Battery Solutions",

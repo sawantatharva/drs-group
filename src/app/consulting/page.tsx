@@ -158,24 +158,6 @@ export default function ConsultingPage() {
 
       {[
         {
-          title: "Business Strategy Development",
-          icon: (
-            <svg viewBox="0 0 24 24" className="h-6 w-6">
-              <path d="M3 3v18h18" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-              <path d="M7 14l3-3 4 4 4-6" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-            </svg>
-          ),
-        },
-        {
-          title: "Market Research & Analysis",
-          icon: (
-            <svg viewBox="0 0 24 24" className="h-6 w-6">
-              <circle cx="11" cy="11" r="7" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-              <path d="M21 21l-4.3-4.3" stroke="currentColor" strokeWidth="1.5"/>
-            </svg>
-          ),
-        },
-        {
           title: "Financial & Risk Consulting",
           icon: (
             <svg viewBox="0 0 24 24" className="h-6 w-6">
