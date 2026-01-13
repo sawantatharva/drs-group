@@ -234,7 +234,7 @@ export default function ImpactPage() {
                   target="_blank"
                   className="rounded-xl bg-[#4f6ef7] px-6 py-3 text-sm font-medium text-white hover:brightness-110"
                 >
-                  View Event PDF
+                  More Information →
                 </Link>
                 <a
                   href="tel:9930099368"
