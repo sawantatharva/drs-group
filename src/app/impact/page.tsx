@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import FoundationGallery from "@/components/FoundationGallery";
 
 export default function ImpactPage() {
   return (
@@ -71,20 +72,7 @@ export default function ImpactPage() {
           </motion.div>
 
           {/* IMAGE */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.96 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="relative aspect-4/3 rounded-3xl overflow-hidden"
-          >
-            <Image
-              src="/about/impact.png"
-              alt="DRS Foundation"
-              fill
-              className="object-cover"
-            />
-          </motion.div>
+          <FoundationGallery />
         </div>
       </section>
 
