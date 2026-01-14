@@ -95,7 +95,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <h3 className="font-aeonik text-2xl text-gray-900">
-              DRS Consulting Division
+              DRS Consulting Services
             </h3>
 
             <p className="mt-6 font-inter text-base leading-relaxed text-gray-600">
@@ -183,7 +183,7 @@ export default function AboutPage() {
           {/* FOUNDATION IMAGE SLOT */}
           <div className="relative aspect-4/3 rounded-3xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 text-sm">
             <Image
-              src="/about/impact.png"
+              src="/foundation/1.jpeg"
               alt="DRS leadership and operations"
               fill
               className="object-cover"

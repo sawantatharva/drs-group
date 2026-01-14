@@ -146,62 +146,70 @@ export default function ConsultingPage() {
     </div>
   </div>
 </section>
+
 {/* SERVICES */}
-<section className="bg-white py-28">
-  <div className="mx-auto max-w-7xl px-6">
+  <section className="bg-white py-28">
+    <div className="mx-auto max-w-7xl px-6">
 
-    <h2 className="text-3xl md:text-4xl font-aeonik mb-16">
-      Our Consulting Services
-    </h2>
+      <h2 className="text-3xl md:text-4xl font-aeonik mb-16">
+        Our Consulting Services
+      </h2>
 
-    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
-      {[
-        {
-          title: "Financial & Risk Consulting",
-          icon: (
-            <svg viewBox="0 0 24 24" className="h-6 w-6">
-              <path d="M12 2v20" stroke="currentColor" strokeWidth="1.5"/>
-              <path d="M8 6h8M8 12h8M8 18h8" stroke="currentColor" strokeWidth="1.5"/>
-            </svg>
-          ),
-        },
-        {
-          title: "HR & Organization Development",
-          icon: (
-            <svg viewBox="0 0 24 24" className="h-6 w-6">
-              <circle cx="12" cy="8" r="3" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-              <path d="M4 20c0-4 4-6 8-6s8 2 8 6" stroke="currentColor" strokeWidth="1.5"/>
-            </svg>
-          ),
-        },
-        {
-          title: "Digital Transformation Advisory",
-          icon: (
-            <svg viewBox="0 0 24 24" className="h-6 w-6">
-              <rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-              <path d="M8 20h8" stroke="currentColor" strokeWidth="1.5"/>
-            </svg>
-          ),
-        },
-      ].map((s) => (
-        <div
-          key={s.title}
-          className="group rounded-2xl border p-8 hover:shadow-xl transition"
-        >
-          <div className="h-12 w-12 rounded-xl bg-[#4f6ef7]/10 flex items-center justify-center text-[#4f6ef7] group-hover:bg-[#4f6ef7] group-hover:text-white transition">
-            {s.icon}
+        {[
+          {
+            title: "Cost Optimisation",
+            icon: (
+              <svg viewBox="0 0 24 24" className="h-6 w-6">
+                <path d="M12 2v20" stroke="currentColor" strokeWidth="1.5"/>
+                <path d="M8 6h8M8 12h8M8 18h8" stroke="currentColor" strokeWidth="1.5"/>
+              </svg>
+            ),
+          },
+          {
+            title: "Electrical Audits for Safety",
+            icon: (
+              <svg viewBox="0 0 24 24" className="h-6 w-6">
+                <circle cx="12" cy="8" r="3" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+                <path d="M4 20c0-4 4-6 8-6s8 2 8 6" stroke="currentColor" strokeWidth="1.5"/>
+              </svg>
+            ),
+          },
+          {
+            title: "Automation & Digital Transformation",
+            icon: (
+              <svg viewBox="0 0 24 24" className="h-6 w-6">
+                <rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+                <path d="M8 20h8" stroke="currentColor" strokeWidth="1.5"/>
+              </svg>
+            ),
+          },
+          {
+            title: "Operational Excellence by New Technology",
+            icon: (
+              <svg viewBox="0 0 24 24" className="h-6 w-6">
+                <path d="M5 12l5 5L20 7" stroke="currentColor" strokeWidth="1.8" fill="none"/>
+              </svg>
+            ),
+          },
+        ].map((s) => (
+          <div
+            key={s.title}
+            className="group rounded-2xl border p-8 hover:shadow-xl transition"
+          >
+            <div className="h-12 w-12 rounded-xl bg-[#4f6ef7]/10 flex items-center justify-center text-[#4f6ef7] group-hover:bg-[#4f6ef7] group-hover:text-white transition">
+              {s.icon}
+            </div>
+
+            <p className="mt-6 font-medium text-lg">
+              {s.title}
+            </p>
           </div>
-
-          <p className="mt-6 font-medium text-lg">
-            {s.title}
-          </p>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
-  </div>
-</section>
-
+  </section>
 
       {/* SECTORS */}
 <section className="bg-gray-50 py-28">

@@ -32,14 +32,14 @@ export default function Home() {
     <main className="w-full overflow-x-hidden">
 
       {/* ================= HERO ================= */}
-      <section className="relative bg-[#050b1a] text-white">
+
+      <section className="relative bg-[#050b1a] text-white min-h-[80vh] flex items-center">
 
         {/* Background */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(9,38,99,0.45),transparent_40%),radial-gradient(circle_at_80%_10%,rgba(79,110,247,0.25),transparent_45%)]" />
 
-        <div className="relative mx-auto max-w-7xl px-5 sm:px-6 pt-28 sm:pt-36 pb-20 sm:pb-32">
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div className="relative mx-auto max-w-7xl px-6 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
             {/* LEFT */}
             <motion.div
@@ -50,15 +50,13 @@ export default function Home() {
                 show: { transition: { staggerChildren: 0.12 } },
               }}
             >
-              {/* Headline */}
               <motion.h1
                 variants={{
                   hidden: { opacity: 0, y: 40 },
                   show: { opacity: 1, y: 0 },
                 }}
                 transition={{ duration: 0.7 }}
-                className="font-aeonik text-[30px] leading-tight 
-                sm:text-5xl md:text-6xl"
+                className="font-aeonik text-3xl sm:text-5xl md:text-6xl leading-tight"
               >
                 Driving Operational
                 <br />
@@ -70,22 +68,21 @@ export default function Home() {
               </motion.h1>
 
               {/* Animated Verticals */}
-              <div className="relative mt-5 h-8 overflow-hidden">
+              <div className="relative mt-5 h-7 overflow-hidden">
                 <AnimatePresence mode="wait">
                   <motion.p
                     key={active}
-                    initial={{ y: 24, opacity: 0 }}
+                    initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
-                    exit={{ y: -24, opacity: 0 }}
+                    exit={{ y: -20, opacity: 0 }}
                     transition={{ duration: 0.4 }}
-                    className="font-aeonik text-lg sm:text-xl text-gray-300"
+                    className="font-aeonik text-base sm:text-lg text-gray-300"
                   >
                     {verticals[active]}
                   </motion.p>
                 </AnimatePresence>
               </div>
 
-              {/* Body */}
               <motion.p
                 variants={{
                   hidden: { opacity: 0, y: 20 },
@@ -106,7 +103,7 @@ export default function Home() {
                   show: { opacity: 1, y: 0 },
                 }}
                 transition={{ duration: 0.6 }}
-                className="mt-10 flex flex-col sm:flex-row gap-4"
+                className="mt-8 flex flex-col sm:flex-row gap-4"
               >
                 <Link
                   href="/solutions"
@@ -128,42 +125,35 @@ export default function Home() {
               </motion.div>
             </motion.div>
 
-            {/* RIGHT – 3D MODEL (Mobile + Desktop) */}
+            {/* RIGHT – LOGO */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.92 }}
+              initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.9 }}
+              transition={{ duration: 0.6 }}
               className="
-                relative flex items-center justify-center
-                mt-12 md:mt-0
+                relative
+                flex
+                justify-center
+                md:justify-center
               "
             >
-              {/* Glow */}
-              <div
-                className="
-                  absolute
-                  h-72 w-72
-                  sm:h-96 sm:w-96
-                  md:h-105 md:w-105
-                  rounded-full
-                  bg-[rgba(9,38,99,0.35)]
-                  blur-[100px]
-                "
-              />
+              {/* soft glow */}
+              <div className="absolute h-80 w-80 rounded-full bg-white/10 blur-[90px]" />
 
-              {/* Canvas Wrapper */}
-              <div
+              <motion.img
+                src="/logo/logo-white.svg"
+                alt="DRS Group"
                 className="
                   relative
-                  h-72 w-72
-                  sm:h-96 sm:w-96
-                  md:h-115 md:w-115
+                  w-56
+                  sm:w-72
+                  md:w-90
                 "
-              >
-                <Hero3D />
-              </div>
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.6 }}
+              />
             </motion.div>
-
 
           </div>
         </div>
@@ -175,7 +165,6 @@ export default function Home() {
       <HowWeWork />
       <Testimonials />
       <Certifications />
-      <HomeCaseStudies />
       <FinalCTA />
     </main>
   );
