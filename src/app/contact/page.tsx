@@ -132,13 +132,14 @@ export default function ContactPage() {
 
           {/* GOOGLE MAP */}
           <div className="w-full h-90 md:h-105 rounded-2xl overflow-hidden border border-gray-200">
-            <iframe
-              title="DRS Group Location"
-              src="https://www.google.com/maps?q=Top%20Heights%20Airoli%20Sector%2019&output=embed"
-              className="w-full h-full border-0"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7536.96148289797!2d72.98843654561972!3d19.174193878202654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bf32d3c6d72f%3A0xa625435e108909e9!2sTTC%20Industrial%20Area%2C%20Airoli%2C%20Navi%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1768372048472!5m2!1sen!2sin"
+            className="h-full w-full sm:h-sm:h-100-[450px]"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
           </div>
         </div>
       </section>
