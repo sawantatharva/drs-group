@@ -12,6 +12,16 @@ export default function FoundationGallery() {
     "/foundation/4.jpeg",
     "/foundation/5.jpeg",
     "/foundation/6.jpeg",
+    "/foundation/7.jpeg",
+    "/foundation/8.jpeg",
+    "/foundation/9.jpeg",
+    "/foundation/10.jpeg",
+    "/foundation/11.jpeg",
+    "/foundation/12.jpeg",
+    "/foundation/13.jpeg",
+    "/foundation/14.jpeg",
+    "/foundation/15.jpeg",
+    "/foundation/16.jpeg",
   ];
 
   const [active, setActive] = useState<number>(0);
