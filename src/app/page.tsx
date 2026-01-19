@@ -34,7 +34,7 @@ export default function Home() {
 
       {/* ================= HERO ================= */}
 
-      <section className="relative bg-[#050b1a] text-white min-h-[80vh] flex items-center">
+      <section className="relative bg-[#050b1a] text-white min-h-[80vh] flex items-center pt-24 sm:pt-28">
 
         {/* Background */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(9,38,99,0.45),transparent_40%),radial-gradient(circle_at_80%_10%,rgba(79,110,247,0.25),transparent_45%)]" />
