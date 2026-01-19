@@ -33,26 +33,28 @@ export default function ConsultingPage() {
       <section className="bg-white py-28">
         <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-16 items-center">
           
-          <div>
-            <h2 className="text-3xl font-aeonik">
-              Operational Excellence
-              <span className="block text-[#4f6ef7]">
-                Delivered With Accountability
-              </span>
-            </h2>
+        <div>
+          <h2 className="text-3xl font-aeonik">
+            Operational Excellence
+            <span className="block text-[#4f6ef7]">
+              Driven by Cost Optimization
+            </span>
+          </h2>
 
-            <p className="mt-6 text-gray-600">
-              Our team of seasoned professionals conducts deep operational
-              assessments using historical data, site audits, and performance
-              benchmarks to identify savings opportunities without compromising
-              service quality.
-            </p>
+          <p className="mt-6 text-gray-600">
+            Our experts conduct comprehensive operational assessments using historical
+            data analysis, on-site audits, and performance benchmarking to identify
+            sustainable cost reduction opportunities without compromising service
+            quality or compliance.
+          </p>
 
-            <p className="mt-4 text-gray-600">
-              We specialize in financial institutions and banks, delivering
-              technology-enabled FM transformation at zero additional cost.
-            </p>
-          </div>
+          <p className="mt-4 text-gray-600">
+            We partner with corporate and industrial organizations to implement
+            technology-enabled Facility Management (FM) strategies that optimize
+            operational expenditure, improve asset utilization, and enhance overall
+            efficiency.
+          </p>
+        </div>
 
           <div className="relative aspect-4/3 rounded-3xl overflow-hidden">
             <Image
