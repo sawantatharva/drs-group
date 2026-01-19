@@ -11,6 +11,7 @@ import HowWeWork from "@/components/HowWeWork";
 import Testimonials from "@/components/Testimonials";
 import HomeCaseStudies from "@/components/HomeCaseStudies";
 import FinalCTA from "@/components/FinalCTA";
+import VisionMission from "@/components/VisionMission";
 
 const verticals = [
   "DRS Foundation",
@@ -91,7 +92,7 @@ export default function Home() {
                 transition={{ duration: 0.6 }}
                 className="mt-5 max-w-xl font-inter text-sm sm:text-base leading-relaxed text-gray-400"
               >
-                DRS Group partners with enterprises across India to deliver
+                DRS Group partners with corporates across India to deliver
                 execution-driven infrastructure, smart technology solutions,
                 and strategic consulting for long-term performance.
               </motion.p>
@@ -162,6 +163,7 @@ export default function Home() {
       {/* OTHER SECTIONS */}
       <GroupOverview />
       <GroupVerticals />
+      <VisionMission />
       <HowWeWork />
       <Testimonials />
       <Certifications />

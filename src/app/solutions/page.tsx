@@ -10,7 +10,7 @@ export default function SolutionsPage() {
     {
       title: "Complete Electrical Solutions",
       desc:
-        "Installation, maintenance and optimization of electrical infrastructure across residential, commercial and industrial environments.",
+        "Installation, maintenance and optimization of electrical infrastructure across commercial and industrial environments.",
       image: "/solutions/1.jpg",
     },
     {
@@ -20,34 +20,16 @@ export default function SolutionsPage() {
       image: "/solutions/2.jpg",
     },
     {
-      title: "Power Backup Solutions (DG)",
+      title: "Air Conditioning Solutions",
       desc:
-        "Robust diesel generator systems providing dependable backup power for critical operations.",
-      image: "/solutions/3.jpg",
+        "Energy-efficient HVAC systems for commercial and industrial environments.",
+      image: "/solutions/6.jpg",
     },
     {
       title: "Inverter & Batteries",
       desc:
         "High-performance inverter and battery systems designed for efficiency and long service life.",
-      image: "/solutions/4.jpeg",
-    },
-    {
-      title: "Battery Solutions",
-      desc:
-        "Advanced energy storage solutions for residential and enterprise power requirements.",
-      image: "/solutions/5.jpg",
-    },
-    {
-      title: "Air Conditioning Solutions",
-      desc:
-        "Energy-efficient HVAC systems for residential, commercial and industrial environments.",
-      image: "/solutions/6.jpg",
-    },
-    {
-      title: "Complete Security Solutions",
-      desc:
-        "Integrated surveillance, access control and monitoring systems.",
-      image: "/solutions/7.jpg",
+      image: "/solutions/4.jpg",
     },
     {
       title: "Data Center Solutions",
@@ -56,22 +38,28 @@ export default function SolutionsPage() {
       image: "/solutions/8.jpg",
     },
     {
+      title: "Complete Security Solutions",
+      desc:
+        "Integrated surveillance, access control and monitoring systems.",
+      image: "/solutions/12.jpg",
+    },
+    {
+      title: "Battery Solutions",
+      desc:
+        "Advanced energy storage solutions for enterprise power requirements.",
+      image: "/solutions/5.jpg",
+    },
+    {
       title: "Complete Fire Solutions",
       desc:
         "Fire detection, suppression and evacuation systems with AMC support.",
       image: "/solutions/9.jpg",
     },
     {
-      title: "Power Audit Solutions",
+      title: "Solar Solutions",
       desc:
-        "Energy audits to identify inefficiencies and optimize power consumption.",
-      image: "/solutions/10.jpg",
-    },
-    {
-      title: "Complete Sales & Service",
-      desc:
-        "End-to-end sales consultation and after-sales service support.",
-      image: "/solutions/11.jpg",
+        "Design and installation of solar power systems for commercial and industrial use.",
+      image: "/solutions/13.jpg",
     },
   ];
 
@@ -129,7 +117,7 @@ export default function SolutionsPage() {
 
           <div className="relative aspect-4/3 rounded-3xl overflow-hidden">
             <Image
-              src="/solutions/1.png"
+              src="/solutions/solutions.png"
               alt="DRS Solutions Team"
               fill
               className="object-cover"
@@ -178,6 +166,145 @@ export default function SolutionsPage() {
           </div>
         </div>
       </section>
+
+{/* FRAMEWORK */}
+<section
+  id="framework"
+  className="relative bg-[#050b1a] py-32 text-white overflow-hidden"
+>
+  {/* Subtle grid */}
+  <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-size-[48px_48px]" />
+
+  <div className="relative mx-auto max-w-6xl px-6">
+
+    {/* Header */}
+    <div className="text-center">
+      <h2 className="text-3xl md:text-5xl font-aeonik">
+        Cost Optimisation Framework
+      </h2>
+      <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
+        A structured, technology-driven approach focused on
+        cost optimisation with enhanced solutions.
+      </p>
+    </div>
+
+    {/* Timeline */}
+    <div className="mt-24 relative">
+
+      {/* Center line */}
+      <div className="absolute left-4 md:left-1/2 top-0 h-full w-0.5 bg-white/10" />
+
+      {[
+        {
+          title: "Site Assessment",
+          desc:
+            "Detailed on-ground infrastructure audit and baseline performance study.",
+          icon: (
+            <svg viewBox="0 0 24 24" className="h-5 w-5">
+              <path
+                d="M10 2h4l1 3h3l2 2v4l-2 2h-3l-1 3h-4l-1-3H6l-2-2V7l2-2h3l1-3z"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              />
+              <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" strokeWidth="1.5" />
+            </svg>
+          ),
+        },
+        {
+          title: "Cost & Usage Analysis",
+          desc:
+            "Identification of high-cost areas, wastage and inefficiencies.",
+          icon: (
+            <svg viewBox="0 0 24 24" className="h-5 w-5">
+              <path d="M3 3v18h18" fill="none" stroke="currentColor" strokeWidth="1.5" />
+              <path d="M7 14l3-3 4 4 4-6" fill="none" stroke="currentColor" strokeWidth="1.5" />
+            </svg>
+          ),
+        },
+        {
+          title: "Energy Optimisation",
+          desc:
+            "Evaluation of electrical, UPS and HVAC systems for efficiency improvement.",
+          icon: (
+            <svg viewBox="0 0 24 24" className="h-5 w-5">
+              <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z" fill="none" stroke="currentColor" strokeWidth="1.5" />
+            </svg>
+          ),
+        },
+        {
+          title: "Enhanced Solution Design",
+          desc:
+            "Cost optimisation using advanced technology and smarter systems.",
+          icon: (
+            <svg viewBox="0 0 24 24" className="h-5 w-5">
+              <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" strokeWidth="1.5" />
+              <path d="M12 7v10M8 11h8" stroke="currentColor" strokeWidth="1.5" />
+            </svg>
+          ),
+        },
+        {
+          title: "Implementation",
+          desc:
+            "Execution through certified teams and trusted partners.",
+          icon: (
+            <svg viewBox="0 0 24 24" className="h-5 w-5">
+              <path d="M5 12l5 5L20 7" fill="none" stroke="currentColor" strokeWidth="1.8" />
+            </svg>
+          ),
+        },
+        {
+          title: "Monitoring & Savings Tracking",
+          desc:
+            "Continuous monitoring to ensure sustained cost savings.",
+          icon: (
+            <svg viewBox="0 0 24 24" className="h-5 w-5">
+              <path
+                d="M3 12s4-6 9-6 9 6 9 6-4 6-9 6-9-6-9-6z"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              />
+              <circle cx="12" cy="12" r="2.5" fill="none" stroke="currentColor" strokeWidth="1.5" />
+            </svg>
+          ),
+        },
+      ].map((step, i) => (
+        <div
+          key={step.title}
+          className={`relative mb-24 flex flex-col md:flex-row ${
+            i % 2 === 0 ? "md:justify-start" : "md:justify-end"
+          }`}
+        >
+          {/* Node */}
+          <div className="absolute left-0 md:left-1/2 -translate-x-1/2">
+            <div className="h-11 w-11 rounded-full bg-[#4f6ef7] flex items-center justify-center text-white">
+              {step.icon}
+            </div>
+          </div>
+
+          {/* Card */}
+          <motion.div
+            whileHover={{ y: -6 }}
+            className="ml-16 md:ml-0 md:w-[45%] rounded-3xl bg-white/5 p-8 border border-white/10 backdrop-blur"
+          >
+            <span className="text-[#4f6ef7] text-xs font-semibold">
+              STEP {i + 1}
+            </span>
+
+            <h3 className="mt-2 text-xl font-aeonik">
+              {step.title}
+            </h3>
+
+            <p className="mt-3 text-gray-400 leading-relaxed">
+              {step.desc}
+            </p>
+          </motion.div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* ================= SECTORS ================= */}
 <section className="bg-white py-28">

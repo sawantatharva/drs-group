@@ -18,9 +18,7 @@ export default function FoundationGallery() {
     "/foundation/10.jpeg",
     "/foundation/11.jpeg",
     "/foundation/12.jpeg",
-    "/foundation/13.jpeg",
     "/foundation/14.jpeg",
-    "/foundation/15.jpeg",
     "/foundation/16.jpeg",
   ];
 

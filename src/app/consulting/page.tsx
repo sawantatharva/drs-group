@@ -56,7 +56,7 @@ export default function ConsultingPage() {
 
           <div className="relative aspect-4/3 rounded-3xl overflow-hidden">
             <Image
-              src="/consulting/conn.png"
+              src="/consulting/consulting.jpg"
               alt="DRS Consulting Team"
               fill
               className="object-cover"
@@ -210,70 +210,6 @@ export default function ConsultingPage() {
       </div>
     </div>
   </section>
-
-      {/* SECTORS */}
-<section className="bg-gray-50 py-28">
-  <div className="mx-auto max-w-7xl px-6">
-
-    <h2 className="text-3xl md:text-4xl font-aeonik mb-16">
-      Sectors We Serve
-    </h2>
-
-    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
-
-      {[
-        {
-          title: "UPS & Inverter Optimization",
-          img: "/sectors/7.png",
-        },
-        {
-          title: "HVAC System Optimization",
-          img: "/sectors/8.png",
-        },
-        {
-          title: "Electricity Expense Management",
-          img: "/sectors/9.png",
-        },
-        {
-          title: "Battery Health Monitoring",
-          img: "/sectors/11.png",
-        },
-        {
-          title: "Sustainability Projects",
-          img: "/sectors/10.png",
-        },
-        {
-          title: "CCTV & Security Infrastructure",
-          img: "/sectors/12.png",
-        },
-      ].map((sector) => (
-        <div
-          key={sector.title}
-          className="group rounded-2xl overflow-hidden bg-white border hover:shadow-xl transition"
-        >
-          {/* IMAGE */}
-          <div className="relative h-52">
-            <img
-              src={sector.img}
-              alt={sector.title}
-              className="h-full w-full object-cover group-hover:scale-105 transition duration-500"
-            />
-
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-black/20" />
-          </div>
-
-          {/* TEXT */}
-          <div className="p-6">
-            <p className="font-medium text-lg">
-              {sector.title}
-            </p>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
 
       {/* METHODOLOGY FLOW */}
 {/* FRAMEWORK */}
@@ -462,38 +398,72 @@ export default function ConsultingPage() {
   </div>
 </section>
 
-      {/* CASE STUDIES */}
-      <section className="bg-[#050b1a] py-28 text-white">
-        <div className="mx-auto max-w-7xl px-6">
-          <h2 className="text-3xl font-aeonik mb-12">
-            Proven Results
-          </h2>
+      {/* SECTORS */}
+<section className="bg-gray-50 py-28">
+  <div className="mx-auto max-w-7xl px-6">
 
-          <div className="grid md:grid-cols-4 gap-8">
-            {[
-              { label: "Admin Cost Savings", value: "₹48 Cr" },
-              { label: "Lease Optimization", value: "₹14 Cr" },
-              { label: "HVAC Savings", value: "₹2.5 Cr" },
-              { label: "UPS Optimization", value: "₹2 Cr" },
-            ].map((item) => (
-              <div
-                key={item.label}
-                className="rounded-2xl bg-white/5 p-6 border border-white/10"
-              >
-                <p className="text-[#4f6ef7] text-3xl font-aeonik">
-                  {item.value}
-                </p>
-                <p className="mt-2 text-gray-400">
-                  {item.label}
-                </p>
-              </div>
-            ))}
+    <h2 className="text-3xl md:text-4xl font-aeonik mb-16">
+      Sectors We Serve
+    </h2>
+
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      {[
+        {
+          title: "UPS & Inverter Optimization",
+          img: "/sectors/7.png",
+        },
+        {
+          title: "HVAC System Optimization",
+          img: "/sectors/8.png",
+        },
+        {
+          title: "Electricity Expense Management",
+          img: "/sectors/9.png",
+        },
+        {
+          title: "Battery Health Monitoring",
+          img: "/sectors/11.png",
+        },
+        {
+          title: "Sustainability Projects",
+          img: "/sectors/10.png",
+        },
+        {
+          title: "CCTV & Security Infrastructure",
+          img: "/sectors/12.png",
+        },
+      ].map((sector) => (
+        <div
+          key={sector.title}
+          className="group rounded-2xl overflow-hidden bg-white border hover:shadow-xl transition"
+        >
+          {/* IMAGE */}
+          <div className="relative h-52">
+            <img
+              src={sector.img}
+              alt={sector.title}
+              className="h-full w-full object-cover group-hover:scale-105 transition duration-500"
+            />
+
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/20" />
+          </div>
+
+          {/* TEXT */}
+          <div className="p-6">
+            <p className="font-medium text-lg">
+              {sector.title}
+            </p>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* ENGAGEMENT MODEL */}
-      <section className="bg-[#050b1a] pb-28 text-white">
+      <section className="bg-[#050b1a] pt-28 pb-28 text-white">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-3xl font-aeonik mb-6">
             Performance-Based Engagement

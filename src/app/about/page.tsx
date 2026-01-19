@@ -34,61 +34,51 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ================= WHO WE ARE ================= */}
-      <section className="bg-white py-28">
-        <div className="mx-auto max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <h2 className="font-aeonik text-2xl md:text-3xl text-gray-900">
-              Who We Are
-            </h2>
+{/* ================= WHO WE ARE ================= */}
+<section className="bg-white py-28">
+  <div className="mx-auto max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    
+    <div>
+      <h2 className="font-aeonik text-2xl md:text-3xl text-gray-900">
+        Who We Are
+      </h2>
 
-            <p className="mt-6 font-inter text-base leading-relaxed text-gray-600">
-            DRS Group is a diversified operations and consulting organization, incorporated in 2021, built on the legacy of over a decade of enterprise experience through its parent foundation. The Group brings together engineering, consulting, and technology capabilities within a unified delivery model to support complex, mission-critical environments.            </p>
+      <p className="mt-6 font-inter text-base leading-relaxed text-gray-600">
+        DRS Group is an operations and consulting organization incorporated in 2021, 
+        focused on delivering practical, execution-driven solutions across 
+        infrastructure, technology, and enterprise operations. 
+        We bring together engineering expertise, strategic consulting, 
+        and on-ground execution within a unified delivery model.
+      </p>
 
-            <p className="mt-4 font-inter text-base leading-relaxed text-gray-600">
-            We partner with organizations across India to assess, optimize, and govern operational performance, delivering measurable outcomes in efficiency, compliance, and cost optimization. Our services are delivered through DRS Smart Solutions and DRS Consultancy Services, enabling end-to-end support from strategy to execution. Alongside our commercial operations, DRS Foundation focuses on initiatives that contribute positively to communities and broader societal development.
+      <p className="mt-4 font-inter text-base leading-relaxed text-gray-600">
+        We partner with organizations across India to assess, optimize, 
+        and strengthen operational performance — driving measurable 
+        improvements in efficiency, compliance, and cost optimization. 
+        Our services are delivered through DRS Smart Solutions and 
+        DRS Consulting Services, enabling end-to-end support 
+        from strategy to implementation.
+      </p>
 
-            </p>
-          </div>
+      <p className="mt-4 font-inter text-base leading-relaxed text-gray-600">
+        Alongside our commercial operations, Shree Ganesha DRS Foundation 
+        focuses on social initiatives aimed at education, women empowerment, 
+        and senior citizen welfare — contributing positively to communities.
+      </p>
+    </div>
 
-          {/* IMAGE SLOT */}
-          <div className="relative aspect-4/3 rounded-3xl bg-gray-100 flex items-center justify-center text-gray-400 text-sm">
-            <Image
-              src="/about/ops.png"
-              alt="DRS leadership and operations"
-              fill
-              className="object-cover"
-            />
-          </div>
-        </div>
-      </section>
+    {/* IMAGE SLOT */}
+    <div className="relative aspect-4/3 rounded-3xl bg-gray-100 flex items-center justify-center text-gray-400 text-sm">
+      <Image
+        src="/about/ops.png"
+        alt="DRS leadership and operations"
+        fill
+        className="object-cover"
+      />
+    </div>
 
-      {/* ================= NUMBERS ================= */}
-      <section className="bg-[#050b1a] py-28 text-white">
-        <div className="mx-auto max-w-7xl px-6">
-          <p className="mb-12 font-inter text-xs tracking-widest uppercase text-gray-400">
-            Numbers That Define Us
-          </p>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
-            {[
-              { value: "14+", label: "Years in Business" },
-              { value: "100+", label: "Enterprise Customers" },
-              { value: "11+", label: "Core Professionals" },
-              { value: "2K+", label: "Assets Protected" },
-            ].map((item) => (
-              <div key={item.label}>
-                <p className="font-aeonik text-4xl md:text-5xl">
-                  {item.value}
-                </p>
-                <p className="mt-2 font-inter text-sm text-gray-400">
-                  {item.label}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+  </div>
+</section>
 
       {/* ================= CONSULTING DIVISION ================= */}
       <section className="bg-gray-50 py-28">

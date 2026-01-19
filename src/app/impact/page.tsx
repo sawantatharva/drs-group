@@ -52,7 +52,7 @@ export default function ImpactPage() {
             </p>
 
             <h2 className="font-aeonik text-2xl sm:text-3xl text-gray-900">
-              DRS Foundation
+              Shri Ganesh DRS Foundation
             </h2>
 
             <p className="mt-6 font-inter text-base leading-relaxed text-gray-600">
@@ -68,6 +68,10 @@ export default function ImpactPage() {
 
             <p className="mt-4 font-inter text-base leading-relaxed text-gray-600">
               Our mission is simple — create real change where it matters most.
+            </p>
+
+            <p className="mt-4 font-inter text-sm text-gray-500">
+              Established: 2021
             </p>
           </motion.div>
 
@@ -165,6 +169,68 @@ export default function ImpactPage() {
           </div>
         </div>
       </section>
+
+      {/* ================= VOLUNTEER PARTNERS ================= */}
+<section className="bg-[#050b1a] py-20">
+  <div className="mx-auto max-w-7xl px-6">
+
+    {/* Title */}
+    <div className="text-center mb-16">
+      <h3 className="font-aeonik text-2xl text-white">
+        Volunteer & Partner Organizations
+      </h3>
+      <p className="mt-3 text-sm text-gray-400 max-w-xl mx-auto">
+        Organizations we proudly collaborate with to deliver
+        meaningful social impact.
+      </p>
+    </div>
+
+    {/* LOGOS */}
+    <div
+      className="
+        flex
+        flex-col
+        sm:flex-row
+        items-center
+        justify-center
+        gap-12
+      "
+    >
+      {[
+        "/partners/p1.jpg",
+        "/partners/p2.jpg",
+      ].map((logo, i) => (
+        <motion.div
+          key={i}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: i * 0.1 }}
+          whileHover={{ scale: 1.05 }}
+          className="
+            bg-white
+            rounded-2xl
+            px-10
+            py-8
+            flex
+            justify-center
+            items-center
+            shadow-lg
+          "
+        >
+          <Image
+            src={logo}
+            alt="Partner logo"
+            width={180}
+            height={90}
+            className="object-contain"
+          />
+        </motion.div>
+      ))}
+    </div>
+
+  </div>
+</section>
 
       {/* ================= EVENTS SECTION ================= */}
       <section className="bg-white py-24 sm:py-28">

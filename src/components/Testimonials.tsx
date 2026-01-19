@@ -6,23 +6,23 @@ import TestimonialCard from "./TestimonialCard";
 const testimonials = [
   {
     quote:
-      "DRS Group brought structure, clarity, and execution discipline to a complex operational challenge. Their team stayed involved from strategy through implementation.",
+      "DRS brought strong execution discipline and clarity to a complex operational challenge.",
     name: "Senior Operations Leader",
     role: "Head of Operations",
     company: "Infrastructure Enterprise",
   },
   {
     quote:
-      "What stood out was DRS’s ability to translate high-level strategy into practical, on-ground solutions that delivered measurable improvements.",
+      "Their team translated strategy into practical, on-ground solutions with measurable results.",
     name: "Program Director",
     role: "Transformation Lead",
     company: "Public Sector Organization",
   },
   {
     quote:
-      "DRS combined consulting rigor with hands-on execution, making them a reliable long-term partner rather than just an advisory firm.",
+      "DRS combines consulting expertise with hands-on execution – a reliable long-term partner.",
     name: "Technology Head",
-    role: "Chief Technology Officer",
+    role: "CTO",
     company: "Enterprise Services Company",
   },
 ];
