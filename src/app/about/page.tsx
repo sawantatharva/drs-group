@@ -106,7 +106,7 @@ export default function AboutPage() {
           {/* GRAPHIC SLOT */}
           <div className="relative aspect-4/3 rounded-3xl bg-white border border-gray-200 flex items-center justify-center text-gray-400 text-sm">
                         <Image
-              src="/about/con.png"
+              src="/about/consulting.jpg"
               alt="DRS leadership and operations"
               fill
               className="object-cover"
@@ -120,7 +120,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="order-2 lg:order-1 relative aspect-4/3 rounded-3xl bg-gray-100 flex items-center justify-center text-gray-400 text-sm">
           <Image
-              src="/about/fm.png"
+              src="/about/sol.jpg"
               alt="DRS leadership and operations"
               fill
               className="object-cover"
@@ -173,7 +173,7 @@ export default function AboutPage() {
           {/* FOUNDATION IMAGE SLOT */}
           <div className="relative aspect-4/3 rounded-3xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 text-sm">
             <Image
-              src="/foundation/1.jpeg"
+              src="/foundation/foundation.jpg"
               alt="DRS leadership and operations"
               fill
               className="object-cover"

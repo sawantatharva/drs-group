@@ -147,7 +147,7 @@ export default function ConsultingPage() {
   </div>
 </section>
 
-{/* SERVICES */}
+{/* SERVICES
   <section className="bg-white py-28">
     <div className="mx-auto max-w-7xl px-6">
 
@@ -209,9 +209,9 @@ export default function ConsultingPage() {
         ))}
       </div>
     </div>
-  </section>
+  </section>  
+  */}
 
-      {/* METHODOLOGY FLOW */}
 {/* FRAMEWORK */}
 <section
   id="framework"
@@ -225,11 +225,11 @@ export default function ConsultingPage() {
     {/* Header */}
     <div className="text-center">
       <h2 className="text-3xl md:text-5xl font-aeonik">
-        Our 6-Step Transformation Framework
+        Cost Optimisation Framework
       </h2>
       <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
-        A structured methodology used by DRS Consulting to
-        uncover savings and drive operational excellence.
+        A structured, technology-driven approach focused on
+        cost optimisation with enhanced solutions.
       </p>
     </div>
 
@@ -241,9 +241,9 @@ export default function ConsultingPage() {
 
       {[
         {
-          title: "Site Diagnostics",
+          title: "Site Assessment",
           desc:
-            "On-ground audits to evaluate infrastructure, vendors and process gaps.",
+            "Detailed on-ground infrastructure audit and baseline performance study.",
           icon: (
             <svg viewBox="0 0 24 24" className="h-5 w-5">
               <path
@@ -252,94 +252,56 @@ export default function ConsultingPage() {
                 stroke="currentColor"
                 strokeWidth="1.5"
               />
-              <circle
-                cx="12"
-                cy="12"
-                r="3"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-              />
+              <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" strokeWidth="1.5" />
             </svg>
           ),
         },
         {
-          title: "Cost Mapping",
+          title: "Cost & Usage Analysis",
           desc:
-            "Detailed spend analysis to identify leakage and optimization scope.",
+            "Identification of high-cost areas, wastage and inefficiencies.",
           icon: (
             <svg viewBox="0 0 24 24" className="h-5 w-5">
-              <path
-                d="M3 3v18h18"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-              />
-              <path
-                d="M7 14l3-3 4 4 4-6"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-              />
+              <path d="M3 3v18h18" fill="none" stroke="currentColor" strokeWidth="1.5" />
+              <path d="M7 14l3-3 4 4 4-6" fill="none" stroke="currentColor" strokeWidth="1.5" />
             </svg>
           ),
         },
         {
-          title: "Energy Assessment",
+          title: "Energy Optimisation",
           desc:
-            "HVAC, UPS and power usage evaluation to reduce energy costs.",
+            "Evaluation of electrical, UPS and HVAC systems for efficiency improvement.",
           icon: (
             <svg viewBox="0 0 24 24" className="h-5 w-5">
-              <path
-                d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-              />
+              <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z" fill="none" stroke="currentColor" strokeWidth="1.5" />
             </svg>
           ),
         },
         {
-          title: "ROI Modeling",
+          title: "Enhanced Solution Design",
           desc:
-            "Payback period and financial impact projections.",
+            "Cost optimisation using advanced technology and smarter systems.",
           icon: (
             <svg viewBox="0 0 24 24" className="h-5 w-5">
-              <circle
-                cx="12"
-                cy="12"
-                r="9"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-              />
-              <path
-                d="M12 7v10M8 11h8"
-                stroke="currentColor"
-                strokeWidth="1.5"
-              />
+              <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" strokeWidth="1.5" />
+              <path d="M12 7v10M8 11h8" stroke="currentColor" strokeWidth="1.5" />
             </svg>
           ),
         },
         {
-          title: "Execution",
+          title: "Implementation",
           desc:
-            "Implementation through vendors, automation and SOPs.",
+            "Execution through certified teams and trusted partners.",
           icon: (
             <svg viewBox="0 0 24 24" className="h-5 w-5">
-              <path
-                d="M5 12l5 5L20 7"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.8"
-              />
+              <path d="M5 12l5 5L20 7" fill="none" stroke="currentColor" strokeWidth="1.8" />
             </svg>
           ),
         },
         {
-          title: "Savings Tracking",
+          title: "Monitoring & Savings Tracking",
           desc:
-            "Continuous monitoring to ensure projected savings are achieved.",
+            "Continuous monitoring to ensure sustained cost savings.",
           icon: (
             <svg viewBox="0 0 24 24" className="h-5 w-5">
               <path
@@ -348,14 +310,7 @@ export default function ConsultingPage() {
                 stroke="currentColor"
                 strokeWidth="1.5"
               />
-              <circle
-                cx="12"
-                cy="12"
-                r="2.5"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-              />
+              <circle cx="12" cy="12" r="2.5" fill="none" stroke="currentColor" strokeWidth="1.5" />
             </svg>
           ),
         },
@@ -363,9 +318,7 @@ export default function ConsultingPage() {
         <div
           key={step.title}
           className={`relative mb-24 flex flex-col md:flex-row ${
-            i % 2 === 0
-              ? "md:justify-start"
-              : "md:justify-end"
+            i % 2 === 0 ? "md:justify-start" : "md:justify-end"
           }`}
         >
           {/* Node */}

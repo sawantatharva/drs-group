@@ -167,6 +167,7 @@ export default function SolutionsPage() {
         </div>
       </section>
 
+{/* METHODOLOGY FLOW */}
 {/* FRAMEWORK */}
 <section
   id="framework"
@@ -180,11 +181,11 @@ export default function SolutionsPage() {
     {/* Header */}
     <div className="text-center">
       <h2 className="text-3xl md:text-5xl font-aeonik">
-        Cost Optimisation Framework
+        Our 6-Step Transformation Framework
       </h2>
       <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
-        A structured, technology-driven approach focused on
-        cost optimisation with enhanced solutions.
+        A structured methodology used by DRS Consulting to
+        uncover savings and drive operational excellence.
       </p>
     </div>
 
@@ -196,9 +197,9 @@ export default function SolutionsPage() {
 
       {[
         {
-          title: "Site Assessment",
+          title: "Site Diagnostics",
           desc:
-            "Detailed on-ground infrastructure audit and baseline performance study.",
+            "On-ground audits to evaluate infrastructure, vendors and process gaps.",
           icon: (
             <svg viewBox="0 0 24 24" className="h-5 w-5">
               <path
@@ -207,56 +208,94 @@ export default function SolutionsPage() {
                 stroke="currentColor"
                 strokeWidth="1.5"
               />
-              <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" strokeWidth="1.5" />
+              <circle
+                cx="12"
+                cy="12"
+                r="3"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              />
             </svg>
           ),
         },
         {
-          title: "Cost & Usage Analysis",
+          title: "Cost Mapping",
           desc:
-            "Identification of high-cost areas, wastage and inefficiencies.",
+            "Detailed spend analysis to identify leakage and optimization scope.",
           icon: (
             <svg viewBox="0 0 24 24" className="h-5 w-5">
-              <path d="M3 3v18h18" fill="none" stroke="currentColor" strokeWidth="1.5" />
-              <path d="M7 14l3-3 4 4 4-6" fill="none" stroke="currentColor" strokeWidth="1.5" />
+              <path
+                d="M3 3v18h18"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              />
+              <path
+                d="M7 14l3-3 4 4 4-6"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              />
             </svg>
           ),
         },
         {
-          title: "Energy Optimisation",
+          title: "Energy Assessment",
           desc:
-            "Evaluation of electrical, UPS and HVAC systems for efficiency improvement.",
+            "HVAC, UPS and power usage evaluation to reduce energy costs.",
           icon: (
             <svg viewBox="0 0 24 24" className="h-5 w-5">
-              <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z" fill="none" stroke="currentColor" strokeWidth="1.5" />
+              <path
+                d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              />
             </svg>
           ),
         },
         {
-          title: "Enhanced Solution Design",
+          title: "ROI Modeling",
           desc:
-            "Cost optimisation using advanced technology and smarter systems.",
+            "Payback period and financial impact projections.",
           icon: (
             <svg viewBox="0 0 24 24" className="h-5 w-5">
-              <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" strokeWidth="1.5" />
-              <path d="M12 7v10M8 11h8" stroke="currentColor" strokeWidth="1.5" />
+              <circle
+                cx="12"
+                cy="12"
+                r="9"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              />
+              <path
+                d="M12 7v10M8 11h8"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              />
             </svg>
           ),
         },
         {
-          title: "Implementation",
+          title: "Execution",
           desc:
-            "Execution through certified teams and trusted partners.",
+            "Implementation through vendors, automation and SOPs.",
           icon: (
             <svg viewBox="0 0 24 24" className="h-5 w-5">
-              <path d="M5 12l5 5L20 7" fill="none" stroke="currentColor" strokeWidth="1.8" />
+              <path
+                d="M5 12l5 5L20 7"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+              />
             </svg>
           ),
         },
         {
-          title: "Monitoring & Savings Tracking",
+          title: "Savings Tracking",
           desc:
-            "Continuous monitoring to ensure sustained cost savings.",
+            "Continuous monitoring to ensure projected savings are achieved.",
           icon: (
             <svg viewBox="0 0 24 24" className="h-5 w-5">
               <path
@@ -265,7 +304,14 @@ export default function SolutionsPage() {
                 stroke="currentColor"
                 strokeWidth="1.5"
               />
-              <circle cx="12" cy="12" r="2.5" fill="none" stroke="currentColor" strokeWidth="1.5" />
+              <circle
+                cx="12"
+                cy="12"
+                r="2.5"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              />
             </svg>
           ),
         },
@@ -273,7 +319,9 @@ export default function SolutionsPage() {
         <div
           key={step.title}
           className={`relative mb-24 flex flex-col md:flex-row ${
-            i % 2 === 0 ? "md:justify-start" : "md:justify-end"
+            i % 2 === 0
+              ? "md:justify-start"
+              : "md:justify-end"
           }`}
         >
           {/* Node */}
