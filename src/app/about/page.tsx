@@ -173,7 +173,7 @@ export default function AboutPage() {
           {/* FOUNDATION IMAGE SLOT */}
           <div className="relative aspect-4/3 rounded-3xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 text-sm">
             <Image
-              src="/foundation/foundation.jpg"
+              src="/foundation/14.jpeg"
               alt="DRS leadership and operations"
               fill
               className="object-cover"

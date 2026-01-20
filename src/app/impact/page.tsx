@@ -251,7 +251,7 @@ export default function ImpactPage() {
             {/* COVER */}
             <div className="relative aspect-video md:aspect-auto">
               <Image
-                src="/events/elderthon3o.jpg"
+                src="/events/elderthon3o-2.jpeg"
                 alt="Elderthon Event"
                 fill
                 className="object-contain bg-black"
@@ -276,7 +276,7 @@ export default function ImpactPage() {
 
               {/* DETAILS */}
               <div className="mt-6 space-y-2 text-sm text-gray-700">
-                <p><strong>Date:</strong> Sunday, 8 February 2026</p>
+                <p><strong>Date:</strong> Sunday, 15 February 2026</p>
                 <p><strong>Time:</strong> 06:00 AM</p>
                 <p><strong>Venue:</strong> Icchapurti Ganesh Mandir, Airoli</p>
               </div>
