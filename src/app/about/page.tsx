@@ -70,7 +70,7 @@ export default function AboutPage() {
     {/* IMAGE SLOT */}
     <div className="relative aspect-4/3 rounded-3xl bg-gray-100 flex items-center justify-center text-gray-400 text-sm">
       <Image
-        src="/about/ops.png"
+        src="/about/v2ops.jpeg"
         alt="DRS leadership and operations"
         fill
         className="object-cover"
