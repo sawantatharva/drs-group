@@ -67,11 +67,11 @@ export default function ConsultingPage() {
         </div>
       </section>
 
-     {/* VISION & MISSION */}
+     {/* VISION & MISSION
 <section className="bg-gray-50 py-28">
   <div className="mx-auto max-w-7xl px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 
-    {/* IMAGE / GRAPHIC */}
+    {/* IMAGE / GRAPHIC
     <div className="order-1 md:order-1 relative aspect-4/3 rounded-3xl overflow-hidden bg-white flex items-center justify-center">
       <img
         src="/consulting/7.png"
@@ -80,7 +80,7 @@ export default function ConsultingPage() {
       />
     </div>
 
-    {/* CONTENT */}
+    {/* CONTENT
     <div className="order-2 md:order-2 space-y-8">
 
       {[
