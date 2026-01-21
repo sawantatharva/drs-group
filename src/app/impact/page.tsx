@@ -52,7 +52,7 @@ export default function ImpactPage() {
             </p>
 
             <h2 className="font-aeonik text-2xl sm:text-3xl text-gray-900">
-              Shri Ganesh DRS Foundation
+              Shri Ganesha DRS Foundation
             </h2>
 
             <p className="mt-6 font-inter text-base leading-relaxed text-gray-600">
