@@ -6,24 +6,24 @@ import TestimonialCard from "./TestimonialCard";
 const testimonials = [
   {
     quote:
-      "DRS brought strong execution discipline and clarity to a complex operational challenge.",
-    name: "Senior Operations Leader",
-    role: "Head of Operations",
-    company: "Infrastructure Enterprise",
+      "DRS brought execution discipline and analytical clarity to a large-scale cost optimization program. Their structured approach delivered tangible savings without disrupting operations.",
+    name: "Enterprise Cost Optimization",
+    role: "₹48 Cr Annual Savings",
+    company: "Administrative Cost Optimization",
   },
   {
     quote:
-      "Their team translated strategy into practical, on-ground solutions with measurable results.",
-    name: "Program Director",
-    role: "Transformation Lead",
-    company: "Public Sector Organization",
+      "DRS translated strategic intent into commercially sound, data-backed recommendations. Their space-utilization and lease rationalization work resulted in measurable, pan-India impact.",
+    name: "Real Estate & Portfolio Rationalization",
+    role: "₹14 Cr Annual Savings",
+    company: "Office Lease Portfolio",
   },
   {
     quote:
-      "DRS combines consulting expertise with hands-on execution – a reliable long-term partner.",
-    name: "Technology Head",
-    role: "CTO",
-    company: "Enterprise Services Company",
+      "DRS combines deep technical expertise with hands-on execution. Their HVAC and power infrastructure optimization delivered sustained savings while maintaining service continuity.",
+    name: "Technical Infrastructure Optimization",
+    role: "₹4.5 Cr+ Annual Savings",
+    company: "HVAC, UPS & Battery Systems",
   },
 ];
 
@@ -38,13 +38,13 @@ export default function Testimonials() {
 
           {/* HEADER */}
           <SectionHeader
-            label="Testimonials"
-            title="Trusted by"
-            highlight="Organizations That Deliver Impact"
-            description="Across sectors and engagement types, our clients value DRS Group for its clarity of thought, execution discipline, and long-term partnership mindset."
+            label="Case Studies"
+            title="Proven"
+            highlight="Business Impact"
+            description="Real-world engagements where DRS Group delivered measurable financial and operational outcomes across industries."
           />
 
-          {/* TESTIMONIALS */}
+          {/* TILES */}
           <div className="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-3">
             {testimonials.map((testimonial, index) => (
               <TestimonialCard

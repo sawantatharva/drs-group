@@ -162,8 +162,8 @@ export default function Home() {
 
       {/* OTHER SECTIONS */}
       <GroupOverview />
-      <GroupVerticals />
       <VisionMission />
+      <GroupVerticals />
       <HowWeWork />
       <Testimonials />
       <Certifications />

@@ -10,8 +10,8 @@ export default function Footer() {
       <div className="border-t border-gray-200" />
 
       <div className="mx-auto max-w-7xl px-6 py-24">
-        <div className="grid grid-cols-1 gap-16 md:grid-cols-3">
-          
+        <div className="grid grid-cols-1 gap-16 md:grid-cols-4">
+
           {/* BRAND */}
           <div>
             <Image
@@ -23,7 +23,7 @@ export default function Footer() {
               priority
             />
 
-            <p className="mt-6 max-w-sm font-inter text-1xl leading-relaxed text-gray-600">
+            <p className="mt-6 max-w-sm font-inter text-base leading-relaxed text-gray-600">
               Delivering operational excellence, intelligent systems, and
               consulting-led transformation across India.
             </p>
@@ -89,6 +89,59 @@ export default function Footer() {
                   +91-7710002293
                 </a>
               </div>
+            </div>
+          </div>
+
+                    {/* SOCIAL */}
+          <div>
+            <p className="mb-5 font-aeonik text-xl text-gray-900">
+              Follow Us
+            </p>
+
+            <div className="flex gap-5">
+
+              {/* LINKEDIN */}
+              <a
+                href="https://www.linkedin.com/in/drs-group-42a144399"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+                  flex h-10 w-10 items-center justify-center
+                  rounded-full border
+                  transition
+                  hover:bg-(--color-primary)
+                "
+              >
+                <Image
+                  src="/social/linkedin.svg"
+                  alt="LinkedIn"
+                  width={20}
+                  height={20}
+                  className="transition group-hover:invert"
+                />
+              </a>
+
+              {/* INSTAGRAM */}
+              <a
+                href="https://www.instagram.com/drs_group2021"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+                  flex h-10 w-10 items-center justify-center
+                  rounded-full border
+                  transition
+                  hover:bg-(--color-primary)
+                "
+              >
+                <Image
+                  src="/social/instagram.svg"
+                  alt="Instagram"
+                  width={20}
+                  height={20}
+                  className="transition group-hover:invert"
+                />
+              </a>
+
             </div>
           </div>
 

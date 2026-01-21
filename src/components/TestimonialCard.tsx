@@ -19,52 +19,52 @@ export default function TestimonialCard({
 }: TestimonialCardProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.6, delay: index * 0.08 }}
+      transition={{ duration: 0.5, delay: index * 0.08 }}
       className="
+        group
         relative
         rounded-2xl
         bg-white/5
-        p-6
-        sm:p-8
-        backdrop-blur-sm
         border border-white/10
+        p-7
+        sm:p-8
+        backdrop-blur
         transition
-        hover:border-white/20
         hover:bg-white/10
+        hover:shadow-xl
       "
     >
-      {/* Quote Icon */}
-      <div className="mb-4 text-3xl text-[#4f6ef7] opacity-80">
+      {/* Accent line */}
+      <div className="absolute left-0 top-0 h-full w-1 rounded-l-2xl bg-[#4f6ef7]" />
+
+      {/* Quote icon */}
+      <div className="mb-4 text-4xl text-[#4f6ef7] opacity-90">
         “
       </div>
 
       {/* Quote */}
-      <p
-        className="
-          font-inter
-          text-sm
-          leading-relaxed
-          text-gray-300
-          sm:text-base
-        "
-      >
+      <p className="font-inter text-sm sm:text-base leading-relaxed text-gray-300">
         {quote}
       </p>
 
       {/* Divider */}
-      <div className="my-5 h-px w-full bg-white/10" />
+      <div className="my-6 h-px w-full bg-white/10" />
 
       {/* Author */}
-      <div className="flex flex-col gap-1">
+      <div>
         <p className="font-aeonik text-sm text-white">
           {name}
         </p>
 
-        <p className="font-inter text-xs sm:text-sm text-gray-400">
-          {role}, {company}
+        <p className="mt-1 font-inter text-xs sm:text-sm text-gray-400">
+          {role}
+        </p>
+
+        <p className="font-inter pt-1 text-xs text-[#4f6ef7]">
+          {company}
         </p>
       </div>
     </motion.div>
