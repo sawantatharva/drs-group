@@ -343,7 +343,7 @@ export default function ImpactPage() {
 
               {Array.from({ length: 28 }).map((_, i) => {
                 const day = i + 1;
-                const isEvent = day === 8;
+                const isEvent = day === 15;
 
                 return (
                   <div
